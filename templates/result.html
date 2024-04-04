@@ -1,0 +1,147 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+    display: flexbox;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(224, 15, 15, 0.2);
+  text-align: center;
+  color: #ff0000;
+}
+
+/* .result-image {
+  display: block;
+  margin: 0 auto;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgb(224, 15, 15);
+  margin-bottom: 20px;
+} */
+
+.result-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+    </style>
+</head>
+<body style="display: flex; flex-direction: column; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+  <h1 class="resultheading">Result</h1>
+
+  <div style="margin-top: 10px; margin-bottom: 10px;">
+    <img src="static/HemaVisionLogo.jpg" alt="HemaVision Logo">
+  </div>
+
+  <div style="display: flex; justify-content: center; align-items: center;">
+    <div style="margin-right: 10px;">
+      <img src="static/ROI_1.jpg" width="250px" alt="ROI Image">
+    </div>
+    <div style="margin-left: 10px;">
+      <img src="static/ROI_Reduced.jpg" alt="ROI Reduced Image">
+    </div>
+  </div>
+
+  <div class="result-text">
+    <p>Estimated HB: {{ result }}</p>
+  </div>
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f6f6f6; /* Light gray background */
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #c53434; /* Dark blue heading */
+            font-size: 36px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(77, 77, 255, 0.2); /* Light shadow */
+            background-color: #ffffff; /* White background */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container img {
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(77, 77, 255, 0.2); /* Light shadow */
+            margin: 0 10px;
+            max-width: 250px;
+            height: auto;
+        }
+
+        .image-label {
+            text-align: center;
+            font-size: 16px;
+            color: #666666; /* Gray color for label */
+            margin-top: 5px;
+        }
+
+        .result-text {
+            text-align: center;
+            font-size: 18px;
+            padding: 20px;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+  <h1 class="resultheading">Result</h1>
+
+  <div class="image-container">
+    <div>
+      <img src="static/ROI_1.jpg" alt="ROI Image">
+      <p class="image-label">Region of Interest</p>
+    </div>
+    <div>
+      <img src="static/ROI_Reduced.jpg" alt="ROI Reduced Image">
+      <p class="image-label"> Reduced Region of Interest</p>
+    </div>
+  </div>
+
+  <div class="result-text">
+    <p>Estimated Hb: {{ result }} g/dl</p>
+  </div>
+</body>
+</html>
+
+
