@@ -1,4 +1,4 @@
 flask==3.0.2
-cv2
-numpy
-pandas
+cv2-dev
+numpy-dev
+pandas-dev
