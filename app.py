@@ -114,4 +114,4 @@ def upload():
     return render_template('result.html', result=newhb[0])
 
 if __name__ == '__main__':
-    app.run(port=10000, debug=True)  # Change the port number as needed
+    app.run(port=5000, debug=True)  # Change the port number as needed
